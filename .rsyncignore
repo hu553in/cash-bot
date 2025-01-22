@@ -1,0 +1,7 @@
+node_modules
+cash-bot.sqlite
+deploy
+.github
+.gitignore
+Makefile
+.git

@@ -1,0 +1,14 @@
+{
+    "name": "cash-bot",
+    "version": "1.0.0",
+    "description": "Very simple Node.js Telegram bot to track cash incomes and outcomes.",
+    "main": "bot.js",
+    "scripts": {
+        "start": "node bot.js"
+    },
+    "author": "hu553in",
+    "dependencies": {
+        "node-telegram-bot-api": "^0.66.0",
+        "sqlite3": "^5.1.7"
+    }
+}
