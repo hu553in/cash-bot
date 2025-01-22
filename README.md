@@ -9,5 +9,5 @@ Very simple Node.js Telegram bot to track cash incomes and outcomes.
 - If user sends "-40000", the current sum is decreased by 40000.
 - Stores only the latest and previous sum in an SQLite database (per user).
 - Button "Undo" reverts to the previous sum (only single previous value is stored in history).
-- Button "Show sum" shows current sum.
+- Button "Show sum" shows the current sum.
 - Button "Reset to 0" sets the current sum to 0.
