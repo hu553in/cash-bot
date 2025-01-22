@@ -12,7 +12,7 @@ npm i -g pm2
 if pm2 list | grep -q $process; then
     pm2 restart $process --update-env
 else
-    pm2 start index.js --name $process --update-env
+    pm2 start bot.js --name $process --update-env
     pm2 startup
     pm2 save
 fi
