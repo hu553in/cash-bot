@@ -1,10 +1,12 @@
 #!/bin/bash
 
+set -e
+
 process="cash-bot"
 
 \. ~/.nvm/nvm.sh
 
-cd /srv/cash-bot
+cd /srv/$process
 npm i
 
 npm i -g pm2
@@ -19,7 +21,7 @@ fi
 
 sleep 10
 
-pm2_jlist_output=$(pm2 jlist)
+pm2_jlist_output=$(pm2 jlist --silent)
 
 apt-get -y install jq
 
