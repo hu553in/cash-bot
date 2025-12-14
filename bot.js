@@ -7,9 +7,11 @@ if (!token) {
   process.exit(1);
 }
 
+const dbPath = process.env.DB_PATH || "db.sqlite";
+
 const bot = new TelegramBot(token, { polling: true });
 
-const db = new sqlite3.Database("cash-bot.sqlite");
+const db = new sqlite3.Database(dbPath);
 db.serialize(() => {
   db.run(`
     CREATE TABLE IF NOT EXISTS sums (
@@ -69,7 +71,7 @@ const keyboard = {
 
 bot.on("message", (msg) => {
   const chatId = msg.chat.id;
-  const text = msg.text.trim();
+  const text = (msg.text || "").trim();
 
   if (text === "/start" || text === "Show sum") {
     getSum(chatId, (currentSum) => {
