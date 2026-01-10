@@ -1,5 +1,7 @@
 # Cash bot
 
+[![CI](https://github.com/hu553in/cash-bot/actions/workflows/ci.yml/badge.svg)](https://github.com/hu553in/cash-bot/actions/workflows/ci.yml)
+
 Very simple Node.js Telegram bot to track cash incomes and outcomes.
 
 ## Features
