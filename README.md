@@ -4,7 +4,8 @@
 
 A minimal Node.js Telegram bot for tracking personal cash balance.
 
-The bot keeps a simple running total per Telegram user and is designed to be lightweight, fast, and easy to reason about.
+The bot keeps a simple running total per Telegram user and is designed to be lightweight, fast,
+and easy to reason about.
 
 ## Features
 
